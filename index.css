@@ -1,0 +1,142 @@
+body {
+  width: 400px;
+  padding: 0px 20px 20px 20px;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-bar__left {
+  width: 30%;
+  display: flex;
+}
+.status-bar__center {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__light {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+i {
+  margin: 0px 3px 3px 0px;
+}
+
+.status-bar__name {
+  margin: 0px 10px 0px 0px;
+}
+
+.welcome-box {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.welcome {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.welcome_index {
+  font-size: 20px;
+  color: grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  border-bottom-color: grey;
+  margin-bottom: 10px;
+}
+.password {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  border-bottom-color: grey;
+  margin-bottom: 40px;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+}
+
+.button {
+  font-size: larger;
+  color: grey;
+  margin-bottom: 10px;
+  border-style: none;
+}
+
+.find {
+  margin-top: 50px;
+  font-size: 15px;
+  color: black;
+  opacity: 0.7;
+}
+@keyframes dot {
+  0% {
+    transform: rotatey(0);
+  }
+  50% {
+    transform: rotatey(180deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+
+@keyframes dott {
+  0% {
+    transform: rotatez(0);
+  }
+
+  100% {
+    transform: rotatez(360deg);
+  }
+}
+
+.fa-sun {
+  animation: dott 3s ease-in-out infinite;
+}
+
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  background-color: yellow;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}
